@@ -739,7 +739,7 @@ def fig_resueltos_vs_intentos_tratamiento(sessions):
             "de intentos; la tasa de resuelto conserva todos los ejercicios del tratamiento."
         ),
     )
-    return with_n(style_fig(fig, height=520), d_all["carnet"].nunique())
+    return with_factor_key(with_n(style_fig(fig, height=520), d_all["carnet"].nunique()))
 
 
 def fig_intentos_resueltos_combinado(sessions):
